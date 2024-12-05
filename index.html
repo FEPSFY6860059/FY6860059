@@ -53,13 +53,27 @@ const d = new Date();
 document.getElementById("date&time").innerHTML = d;
 
     <style>
-      .icon-box img {
-        width: 150px
-      height: auto;
-      margin-right: 20px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+      .icon-box {
+        display: flex;
+      align items: centre;
+      background-color: #f9f9f9
+        border: 1px solid #ddd;
+      border radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0,1);
     }
+        .icon-box . content h3{
+          font-size: 1.5em;
+          margin: 0;
+          color: #333;
+        }
+        .icon-box . content p{
+          margin: 5px 0 0;
+          color: #555;
+          font-size: 1em;
+        }
+     
       </style>
         
 </script>
@@ -99,6 +113,7 @@ document.getElementById("date&time").innerHTML = d;
     
     <hr>
     </p>
+      <div class="icon-box">
     <h3 id="Abstract">Abstract</h3>
       <pre id="Abstract_InText">
   <p class="ex1">
@@ -110,6 +125,7 @@ document.getElementById("date&time").innerHTML = d;
     metals from wastewater. Additionally, advancements in polymer-based composites like polymer nanocomposites are discussed 
     highlighting efficiency in heavy metal removal and detection and the challenges which come with attempting to produce 
     these composites at a large scale.
+  </div>
   </pre>
   </p>
     <h3 id="Introduction">Introduction</h3>
@@ -147,10 +163,8 @@ document.getElementById("date&time").innerHTML = d;
         making it one of the most widely used techniques for the removal of heavy metals from wastewater. <a href="#References">(Brirmi et al., 2024)</a>. 
         Adsorption occurs when an adsorbate accumulates on the surface of the adsorbents and forms an atomic or molecular film <a href="#References">(Jadoun, S et al., 2023)</a>.
       <div style="text-align:centre;">
-        <div class="icon-box">
          <img src="Adsorption of heavy metals by polymers.png" alt="Adsorption of heavy metals by polymers">
          Figure 1: Adsorption of heavy metals by polymers, <a href="#References">(Jadoun, S et al., 2023)</a>
-      </div>
       </div>
     </pre>
     </p>
@@ -168,7 +182,7 @@ document.getElementById("date&time").innerHTML = d;
         in binding strength for specific metals like lead (Pb) and arsenic (As) <a href="#References">(Lofrano et al., 2016)</a>. 
         While these innovations a greatly exciting and promising, scaling up for industrial applications continues to be an obstacle.
      <div style="text-align:centre;"> 
-      <img src="Adsorption process.png" width="700" height="300">
+      <img src="Adsorption process.png" >
        Figure 2: Adsorption process used for water treatment, <a href="#References">(Qasem et al., 2021)</a>.
       </div>
     </hr>
