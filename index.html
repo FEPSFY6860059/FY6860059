@@ -43,6 +43,17 @@
 
      </style>
 
+      <p id="date&time"></p>
+
+      <script>
+
+//Javascript to displsy the data and time on my webpage
+
+const d = new Date();
+document.getElementById("date&time").innerHTML = d;
+
+</script>
+        
   </head>
 
   <body style="background-color:#FFFFFF;margin-left:50px;">
@@ -216,17 +227,6 @@
   </p>
             <video src="ENG0018 Presentation.mp4" width="800" height="450" controls>
             </video>
-
-            <p id="date&time"></p>
-
-<script>
-
-//Javascript to displsy the data and time on my webpage
-
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-
-</script>
 
           <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
