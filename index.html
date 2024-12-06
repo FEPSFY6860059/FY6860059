@@ -74,7 +74,7 @@ document.getElementById("date&time").innerHTML = d;
     </tr>
       
     <tr>
-      <td><a href="#Discussion">Analysis and discussion</td>
+      <td><a href="#Main body">Main body</td>
     </tr>
 
     <tr>
@@ -103,6 +103,7 @@ document.getElementById("date&time").innerHTML = d;
     these composites at a large scale.
   </div>
   </pre>
+      </pre>
   </p>
     <h3 id="Introduction">Introduction</h3>
         <pre id="Introduction_InText">
@@ -118,9 +119,10 @@ document.getElementById("date&time").innerHTML = d;
     for development of processses to treat wastewater efficiently. This article explores the use of polymers in heavy metal removal, looking into 
     future advancements and the challenges that optimisation of these polymer-based composites must navigate.
   </pre>
+        </pre>
   </P>      
-      <h3 id="Discussion">Analysis and discussion</h3>
-          <pre id="Discussion_InText">
+      <h3 id="Main body">Main body</h3>
+          <pre id="Main body_InText">
             <p class="ex1">
         <pre>
         The removal of heavy metals in wastewater by polymers was a process popularised in the 1970s due to recent developments in polymer technology. 
@@ -143,6 +145,7 @@ document.getElementById("date&time").innerHTML = d;
          Figure 1: Adsorption of heavy metals by polymers, <a href="#References">(Jadoun, S et al., 2023)</a>
       </div>
     </pre>
+          </pre>
     </p>
         The polymer adsorbs the heavy metal by forming chemical bonds with the metal or through ion exchange; the polymer binds to the metals 
         by these mechanisms and eliminates them from the wastewater. The heavy metals can then be removed from the polymer by using a 
@@ -175,6 +178,7 @@ document.getElementById("date&time").innerHTML = d;
         to improve their already impressive performance by enchancing their adsorption capacity and selectivity, such as polymer nanocomposites, 
         providing a promising advancemt in this field. However their complex synthesis and scalabilty challenges their ability to be produced at large scales.
     </pre>
+          </pre>
     </p>  
       
     <h3 id="References">References</h3>
@@ -296,10 +300,10 @@ document.getElementById("date&time").innerHTML = d;
     // Calculate word count for each section and accumulate the total
     const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const MainbodyCount = displayWordCount("Main body_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + AnalysisCount + ConclusionCount;
+    const totalWordCount = AbstractCount + IntroductionCount + MainbodyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
