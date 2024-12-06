@@ -91,10 +91,9 @@ document.getElementById("date&time").innerHTML = d;
     </p>
       
     <h3 id="Abstract"><b>ABSTRACT</b></h3>
-      <pre id="Abstract_InText">
   <p class="ex1">
   <pre>
-    <h1 style="border:black; border-width:4px; border-style:solid; margin: 50px; padding: 15px;"> 
+    <h1 style="border:black; border-width:4px; border-style:solid; margin: 50px; padding: 10px;"> 
       <p style="font-size: 20px;">
     Heavy metal pollution in water is a critical environmental and public health issue, particularly in developing countries 
     and communities with limited access to clean drinking water. The use of polymers as adsorbents in the removal of heavy 
@@ -313,12 +312,11 @@ document.getElementById("date&time").innerHTML = d;
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const MainbodyCount = displayWordCount("Main body_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + MainbodyCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + MainbodyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
